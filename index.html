@@ -3,9 +3,27 @@
 <head>
 <meta charset="utf-8"> 
 <title>SFslanguage的小站</title> 
-
 </head>
 <body>
-<p>welcome!<p>
+<script>
+document.write("<h1>我的小站</h1>");
+document.write("<p>这里包含所有的荟萃梗，摸鱼入口，代码网站</p>");
+</script>
+
+<p id="qq">QQ群</p>
+<p id="qqqun"> </p>
+<script>
+document.getElementById("qq").onmouseenter = function() {mouseEnter()};
+document.getElementById("qq").onmouseleave = function() {mouseLeave()};
+function mouseEnter() {
+    document.getElementById("qq").style.color = "red";
+  document.getElementById("qqqun").innerHTML="747776258";
+}
+function mouseLeave() {
+    document.getElementById("qq").style.color = "black";
+  document.getElementById("qqqun").innerHTML="";
+}
+}
+</script>
 </body>
 </html>
